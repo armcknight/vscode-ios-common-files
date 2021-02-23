@@ -1,8 +1,8 @@
 {
-    "name": "vscode-ios-common-files",
+    "name": "vscode-ios-common-files-armcknight",
     "displayName": "iOS Common Files",
     "description": "Provides Syntax Highlighting to common iOS files e.g CocoaPods / Fastlane.",
-    "version": "1.0.5",
+    "version": "1.1.0",
     "publisher": "Orta",
     "engines": {
         "vscode": "^1.0.0"
@@ -11,12 +11,16 @@
         "Other"
     ],
     "activationEvents": [
-        "workspaceContains:Podfile",
-        "workspaceContains:*.podspec",
-        "workspaceContains:Fastfile",
-        "workspaceContains:fastlane/Fastfile",
-        "workspaceContains:Fastfile*",
-        "workspaceContains:*Fastfile"
+        "workspaceContains:*.podspec*",
+        "workspaceContains:*Appfile*",
+        "workspaceContains:*Cartfile*",
+        "workspaceContains:*Deliverfile*",
+        "workspaceContains:*Fastfile*",
+        "workspaceContains:*Gymfile*",
+        "workspaceContains:*Matchfile*",
+        "workspaceContains:*Podfile*",
+        "workspaceContains:*Scanfile*",
+        "workspaceContains:*Snapfile*"
     ],
     "main": "./extension",
     "icon": "icon.png",
@@ -25,17 +29,15 @@
 			"id": "ruby",
 			"aliases": ["Ruby", "ruby"],
             "filenamePatterns": [
-                "Appfile",
-                "Deliverfile",
-                "Fastfile",
-                "Gymfile",
-                "Matchfile",
-                "Scanfile",
-                "Snapfile",
-                "Podfile",
-                "*.podspec",
-                "Fastfile*",
-                "*Fastfile"
+                "*Appfile*",
+                "*Deliverfile*",
+                "*Fastfile*",
+                "*Gymfile*",
+                "*Matchfile*",
+                "*Scanfile*",
+                "*Snapfile*",
+                "*Podfile*",
+                "*.podspec"
             ]
         }]
     },
